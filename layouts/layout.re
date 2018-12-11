@@ -26,13 +26,19 @@ let make = (~_location: location, ~file: file, children) => {
   render: _self => {
     let {title, description, keywords} = file;
 
-    <main className="w-1/2 font-overpass">
-      <Meta siteName title description keywords />
-      <ul>
-        <li> <Link to_="/"> {"Home" |> s} </Link> </li>
-        <li> <Link to_="/about"> {"About" |> s} </Link> </li>
-      </ul>
-      children
-    </main>;
+    <div className="flex flex-col md:flex-row h-screen">
+      <nav className="bg-sand-lighten-20 h-full py-16 w-1/5">
+        <Meta siteName title description keywords />
+        <ul
+          className="font-montserrat leading-loose list-reset no-underline pl-8">
+          <li> <Link to_="/"> {"Home" |> s} </Link> </li>
+          <li> <Link to_="/about"> {"About" |> s} </Link> </li>
+          <li>
+            <Link to_=Routing.(href(Typography))> {"Typography" |> s} </Link>
+          </li>
+        </ul>
+      </nav>
+      <main className="w-1/2 font-overpass md:pl-12"> children </main>
+    </div>;
   },
 };

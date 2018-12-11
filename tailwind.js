@@ -128,26 +128,31 @@ let colors = {
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
 
-  // Primary Color
-  'primary': '#f9543e',
-  'primary-dark-10': '#df4b37',
-  'primary-dark-5': '#ec4f3a',
-  'primary-lighten-90': '#feeeec',
+    // Common Colors
+    'white': '#ffffff',
 
-  // Accent Color
-  'info-blue': '#376fdd',
-  'info-blue-lighten-95': 'rgba(55, 111, 221, 0.05)',
-  'dark-blue': '#363687',
-  'sand': '#f4f1e6',
-  'sand-lighten-20': 'rgba(249, 246, 243, 0.8)',
-
-  // Text Colors
-  'main-black': '#23242e',
-  'main-lighten-15': 'rgba(35, 36, 46, 0.85)',
-  'main-lighten-35': 'rgba(35, 36, 46, 0.35)',
-  'main-lighten-50': 'rgba(35, 36, 46, 0.5)',
-  'main-lighten-90': 'rgba(35, 36, 46, 0.1)',
-  'main-lighten-95': 'rgba(35, 36, 46, 0.05)'
+    // Primary Color
+    'primary-dark-10': '#df4b37',
+    'primary-dark-5': '#ec4f3a',
+    'primary': '#f9543e',
+    'primary-lighten-90': '#feeeec',
+  
+    // Accent Colors
+    'dark-blue': '#363687',
+    'info-blue': '#376fdd',
+    'info-blue-lighten-95': 'rgba(55, 111, 221, 0.05)',
+  
+    // Background Colors
+    'sand': '#f4f1e6',
+    'sand-lighten-20': 'rgba(249, 246, 243, 0.8)',
+  
+    // Text Colors
+    'main-black': '#23242e',
+    'main-lighten-15': 'rgba(35, 36, 46, 0.85)',
+    'main-lighten-35': 'rgba(35, 36, 46, 0.35)',
+    'main-lighten-50': 'rgba(35, 36, 46, 0.5)',
+    'main-lighten-90': 'rgba(35, 36, 46, 0.1)',
+    'main-lighten-95': 'rgba(35, 36, 46, 0.05)'
 }
 
 module.exports = {

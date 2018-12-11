@@ -34,12 +34,14 @@ type meta = {
 type route =
   | Index
   | About
+  | Typography
   | NotFound;
 
 let pathnameToRoute = (pathname: string): route =>
   switch (pathname) {
   | "/" => Index
   | "/about" => About
+  | "/typography" => Typography
   | _ => NotFound
   };
 
@@ -47,6 +49,7 @@ let routeToPath = (route: route): string =>
   switch (route) {
   | Index => ""
   | About => "about"
+  | Typography => "typography"
   | NotFound => "404"
   };
 
@@ -66,7 +69,7 @@ type routeMapping = (route, string, meta);
     Whenever you need a new route, add it here
  */
 let routeFileMappings: list(routeMapping) = [
-  (Index, "index.mdx", meta()),
-  (About, "about.mdx", meta()),
+  (Index, "page_index.gen.js", meta()),
+  (Typography, "page_typography.gen.js", meta()),
   (NotFound, "page_404.gen.js", meta()),
 ];
